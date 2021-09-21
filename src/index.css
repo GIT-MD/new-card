@@ -12,15 +12,50 @@ code {
     monospace;
 }
 
+.page__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  padding-top: 15px;
+  background-color: #8b8b8b;
+  margin: auto;
+}
+.page__container__buttons {
+  margin-bottom: 10px;
+}
+.page__container_remove {
+  margin-right: 100px;
+}
+.page__container_remove,
+.page__container_fetching {
+  color: #fff;
+  top: 1;
+  right: 20px;
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  background-color: rgb(240, 54, 54);
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  outline: none;
+}
+ {
+}
+
 .apiCards {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 5px;
+  row-gap: 3px;
   column-gap: 2px;
-  width: 80%;
-  margin: 0 auto;
 }
-.cards {
+.card {
+  position: relative;
   color: #fff;
   width: 250px;
   border: 1px solid rgb(215, 218, 221);
@@ -28,20 +63,44 @@ code {
   padding: 25px;
 }
 
-.cards__container {
+.card__container {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
-.text {
+.card__text {
   margin: 0 0 10px 0;
   text-align: center;
   color: #fff;
 }
-.cards__title {
+.card__title {
   flex: 1 1 auto;
   margin-bottom: 20px;
 }
-.cards__body {
+.card__body {
+}
+.removeCards {
+  position: absolute;
+  color: #fff;
+  top: 1;
+  right: 20px;
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  background-color: rgb(240, 54, 54);
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  outline: none;
+}
+
+button:hover {
+  background-color: #e5e22e;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
 }
